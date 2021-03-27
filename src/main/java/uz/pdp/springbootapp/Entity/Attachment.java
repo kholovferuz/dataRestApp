@@ -11,7 +11,7 @@ public class Attachment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(nullable = false)
-    private String name;
+    private String originalFilename;
     @Column
     private long size;
     @Column

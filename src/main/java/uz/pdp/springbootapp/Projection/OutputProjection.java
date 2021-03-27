@@ -17,7 +17,7 @@ public interface OutputProjection {
 
     Warehouse getWarehouse();
 
-    Supplier getClient();
+    Client getClient();
 
     Currency getCurrency();
 }
