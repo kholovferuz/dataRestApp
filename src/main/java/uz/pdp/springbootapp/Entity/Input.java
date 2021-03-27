@@ -13,7 +13,7 @@ public class Input {
     private Integer id;
 
     private Timestamp date;
-
+    @Column(nullable = false,unique = true)
     private String invoiceNumber;
 
     @Column(unique = true, nullable = false)

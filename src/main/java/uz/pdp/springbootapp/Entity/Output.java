@@ -22,7 +22,7 @@ public class Output {
 
     @ManyToOne
     private Currency currency;
-
+    @Column(nullable = false, unique = true)
     private String invoiceNumber;
 
     @Column(unique = true, nullable = false)
