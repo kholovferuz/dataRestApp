@@ -9,6 +9,6 @@ public interface WarehouseProjection {
 
     String getName();
 
-    long getActive();
+    Boolean getActive();
 
 }

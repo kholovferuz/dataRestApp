@@ -9,6 +9,6 @@ public interface MeasurementProjection {
 
     String getName();
 
-    long getActive();
+    Boolean getActive();
 
 }

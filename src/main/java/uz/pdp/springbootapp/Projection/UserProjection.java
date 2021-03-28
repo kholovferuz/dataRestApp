@@ -20,7 +20,7 @@ public interface UserProjection {
 
     String getPassword();
 
-    boolean getActive();
+    Boolean getActive();
 
     List<Warehouse> getWarehouses();
 }

@@ -12,7 +12,7 @@ public interface ProductProjection {
 
     String getName();
 
-    long getActive();
+    Boolean getActive();
 
     Category getCategory();
 

@@ -9,7 +9,7 @@ public interface CategoryProjection {
 
     String getName();
 
-    long getActive();
+    Boolean getActive();
 
     String getParentCategory();
 }

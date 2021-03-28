@@ -9,7 +9,7 @@ public interface SupplierProjection {
 
     String getName();
 
-    long getActive();
+    Boolean getActive();
 
     String getPhoneNumber();
 }

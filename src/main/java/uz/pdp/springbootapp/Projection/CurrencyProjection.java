@@ -9,6 +9,6 @@ public interface CurrencyProjection {
 
     String getName();
 
-    long getActive();
+    Boolean getActive();
 
 }
