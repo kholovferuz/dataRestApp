@@ -14,6 +14,5 @@ import java.sql.Timestamp;
 
 @RepositoryRestResource(path = "output", excerptProjection = OutputProjection.class)
 public interface OutputRepository extends JpaRepository<Output, Integer> {
-    @RestResource(path = "byDate")
-    Page<Output> findAllByDate(@Param("date") Timestamp date, Pageable pageable);
+
 }

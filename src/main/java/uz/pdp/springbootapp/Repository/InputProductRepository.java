@@ -11,6 +11,5 @@ import uz.pdp.springbootapp.Projection.InputProductProjection;
 
 @RepositoryRestResource(path = "inputProduct", excerptProjection = InputProductProjection.class)
 public interface InputProductRepository extends JpaRepository<InputProduct, Integer> {
-    @RestResource(path = "byPrice")
-    Page<InputProduct> findAllByPrice(@Param("price") Double price, Pageable pageable);
+
 }

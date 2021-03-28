@@ -13,7 +13,6 @@ import uz.pdp.springbootapp.Projection.ProductProjection;
 
 @RepositoryRestResource(path = "product", excerptProjection = ProductProjection.class)
 public interface ProductRepository extends JpaRepository<Product, Integer> {
-    @RestResource(path = "byCategory")
-    Page<Product> findAllByCategory(@Param("category") Category category, Pageable pageable);
+
 
 }

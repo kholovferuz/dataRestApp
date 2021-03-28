@@ -13,6 +13,4 @@ import uz.pdp.springbootapp.Projection.SupplierProjection;
 @RepositoryRestResource(path = "supplier", excerptProjection = SupplierProjection.class)
 public interface SupplierRepository extends JpaRepository<Supplier, Integer> {
 
-    @RestResource(path = "byName")
-    Page<Supplier> findAllByName(@Param("name") String name, Pageable pageable);
 }

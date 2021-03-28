@@ -12,6 +12,4 @@ import uz.pdp.springbootapp.Projection.WarehouseProjection;
 @RepositoryRestResource(path = "warehouse", excerptProjection = WarehouseProjection.class)
 public interface WarehouseRepository extends JpaRepository<Warehouse, Integer> {
 
-    @RestResource(path = "byName")
-    Page<Warehouse> findAllByName(@Param("name") String name, Pageable pageable);
 }

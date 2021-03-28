@@ -12,7 +12,5 @@ import uz.pdp.springbootapp.Projection.UserProjection;
 @RepositoryRestResource(path = "user",excerptProjection = UserProjection.class)
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-    @RestResource(path = "byFirstName")
-    Page<User> findAllByFirstName(@Param("firstName") String firstName, Pageable pageable);
 
 }

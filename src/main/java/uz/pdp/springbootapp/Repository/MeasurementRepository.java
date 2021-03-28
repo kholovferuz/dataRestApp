@@ -12,6 +12,5 @@ import uz.pdp.springbootapp.Projection.MeasurementProjection;
 
 @RepositoryRestResource(path = "measurement", excerptProjection = MeasurementProjection.class)
 public interface MeasurementRepository extends JpaRepository<Measurement, Integer> {
-    @RestResource(path = "byName")
-    Page<Measurement> findAllByName(@Param("name") String name, Pageable pageable);
+
 }

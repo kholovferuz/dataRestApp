@@ -9,7 +9,7 @@ public interface ClientProjection {
 
     String getName();
 
-    long getActive();
+    Boolean getActive();
 
     String getPhoneNumber();
 }

@@ -11,8 +11,10 @@ import uz.pdp.springbootapp.Entity.InputProduct;
 import uz.pdp.springbootapp.Entity.Measurement;
 import uz.pdp.springbootapp.Projection.CurrencyProjection;
 
+import java.util.List;
+
 @RepositoryRestResource(path = "currency", excerptProjection = CurrencyProjection.class)
 public interface CurrencyRepository extends JpaRepository<Currency, Integer> {
-    @RestResource(path = "byName")
-    Page<Currency> findAllByName(@Param("name") String name, Pageable pageable);
+
+    List<Currency> findByName(String name);
 }

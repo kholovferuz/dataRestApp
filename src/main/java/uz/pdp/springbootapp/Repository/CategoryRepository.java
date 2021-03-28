@@ -13,9 +13,5 @@ import uz.pdp.springbootapp.Projection.CategoryProjection;
 
 @RepositoryRestResource(path = "category", excerptProjection = CategoryProjection.class)
 public interface CategoryRepository extends JpaRepository<Category, Integer> {
-    @RestResource(path = "byName")
-    Page<Category> findAllByName(@Param("name") String name, Pageable pageable);
 
-    @RestResource(path = "parentCategoryId")
-    Category findByParentCategoryId(Integer parentCategory_id);
 }
